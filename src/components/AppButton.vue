@@ -36,7 +36,7 @@ export default {
     position: relative;
     border-radius: $borderRadius;
 
-    padding: $paddingInputWrapper;
+    padding: $paddingXY;
 
     font-weight: bold;
     font-size: $textSize;

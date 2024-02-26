@@ -25,11 +25,12 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/variables.scss';
 .app-form {
-    max-width: 60rem;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 1.4rem;
+    width: 100%;
+    gap: $gapYMedium;
+
     &__title {
         font-size: $titleSize;
     }

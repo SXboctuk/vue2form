@@ -56,7 +56,7 @@ export default {
     align-items: center;
     justify-content: center;
 
-    padding-inline: $paddingInputX;
+    padding-inline: $paddingX;
     &__label {
         z-index: 5;
         height: 100%;
@@ -90,7 +90,7 @@ export default {
         transition: opacity $transitionSlow ease-in-out;
     }
     &__input {
-        padding: $paddingInputWrapper;
+        padding: $paddingXY;
 
         outline: none;
 

@@ -73,7 +73,7 @@ export default {
 
     position: relative;
 
-    padding: $paddingInputWrapper;
+    padding: $paddingXY;
 
     &::after {
         content: '';

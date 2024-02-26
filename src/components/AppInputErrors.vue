@@ -30,10 +30,10 @@ export default {
     &__error {
         position: relative;
         z-index: -1;
-        padding-inline: $paddingInputX;
+        padding-inline: $paddingX;
         color: $errorColor;
         display: grid;
-        margin-top: $paddingInputY;
+        margin-top: $paddingY;
         & > * {
             overflow: hidden;
         }
@@ -56,7 +56,7 @@ export default {
 .errorToBottom-leave {
     grid-template-rows: 1fr;
     opacity: 1;
-    margin-top: $paddingInputY;
+    margin-top: $paddingY;
 }
 .errorToBottom-enter,
 .errorToBottom-leave-to {

@@ -13,9 +13,18 @@ $transitionSlow: 0.3s;
 $transitionMedium: 0.2s;
 $transitionFast: 0.1s;
 
-$paddingInputX: 1rem;
-$paddingInputY: 0.8rem;
-$paddingInputWrapper: $paddingInputY $paddingInputX;
+$paddingX: 1rem;
+$paddingY: 0.8rem;
+$paddingXY: $paddingY $paddingX;
+
+$marginX: 1rem;
+$marginY: 0.8rem;
+$marginXY: $marginY $marginX;
+
+$gapX: 2rem;
+$gapY: 1rem;
+$gapYMedium: 1.4rem;
+$gapYSmall: 0.6rem;
 
 $labelInputPadding: 0 1.2rem 0 0;
 

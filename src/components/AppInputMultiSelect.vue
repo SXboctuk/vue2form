@@ -98,7 +98,7 @@ export default {
     align-items: center;
     justify-content: center;
 
-    padding-inline: $paddingInputX;
+    padding-inline: $paddingX;
 
     &__label {
         z-index: 5;
@@ -110,12 +110,14 @@ export default {
     }
     &__select {
         display: flex;
-        gap: 2rem;
+        flex-wrap: wrap;
+        column-gap: $gapX;
+        row-gap: $gapY;
         width: 100%;
     }
     &__option {
         position: relative;
-        padding: $paddingInputWrapper;
+        padding: $paddingXY;
         cursor: pointer;
         &::after {
             content: '';
