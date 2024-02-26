@@ -1,0 +1,26 @@
+$borderRadius: 0.4rem;
+$borderRadiusSmall: 0.2rem;
+
+$shadowOpacity: 0.4;
+
+$afterBoxShadow: inset 0px 0.2rem 0px rgba(0, 0, 0, 0);
+$afterBoxShadowActive: inset 0px 0.2rem 0.6rem rgba(0, 0, 0, $shadowOpacity);
+
+$beforeBoxShadow: 0px 0.2rem 0.6rem rgba(0, 0, 0, $shadowOpacity);
+$beforeBoxShadowActive: 0px 0.2rem 0px rgba(0, 0, 0, 0);
+
+$transitionSlow: 0.3s;
+$transitionMedium: 0.2s;
+$transitionFast: 0.1s;
+
+$paddingInputWrapper: 0.8rem 1rem;
+
+$labelInputPadding: 0 1.2rem 0 0;
+
+$titleSize: 2rem;
+
+$textSize: 1rem;
+$textSize-small: 0.8rem;
+
+$errorColor: #f00;
+$successColor: #0f0;
