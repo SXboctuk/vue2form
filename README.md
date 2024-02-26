@@ -1,4 +1,3 @@
-# medods-test-1
 
 ## Project setup
 ```
