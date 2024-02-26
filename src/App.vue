@@ -1,28 +1,38 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <AppFormBaseInfo />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AppFormBaseInfo from './components/AppFormBaseInfo.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    name: 'App',
+    components: {
+        AppFormBaseInfo,
+    },
+};
 </script>
 
-<style>
+<style lang="scss">
+@import './assets/normalize.css';
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+}
+html {
+    font-size: 14px;
+    @media screen and (min-width: 480px) {
+        font-size: 16px;
+    }
+    @media screen and (min-width: 640px) {
+        font-size: 17px;
+    }
+    @media screen and (min-width: 1024px) {
+        font-size: 19px;
+    }
 }
 </style>
