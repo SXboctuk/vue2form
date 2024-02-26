@@ -1,16 +1,16 @@
 <template>
     <div id="app">
-        <AppFormBaseInfo />
+        <App-form-patient />
     </div>
 </template>
 
 <script>
-import AppFormBaseInfo from './components/AppFormBaseInfo.vue';
+import AppFormPatient from '@/components/AppFormPatient.vue';
 
 export default {
     name: 'App',
     components: {
-        AppFormBaseInfo,
+        AppFormPatient,
     },
 };
 </script>
