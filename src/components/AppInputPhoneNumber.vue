@@ -41,6 +41,10 @@ export default {
         },
     },
     emits: ['update:model-value'],
+    model: {
+        prop: 'modelValue',
+        event: 'update:model-value',
+    },
     data: () => {
         return {
             inputValue: '',
