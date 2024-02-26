@@ -55,6 +55,8 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding-inline: $paddingInputX;
     &__label {
         z-index: 5;
         height: 100%;

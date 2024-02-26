@@ -1,11 +1,5 @@
 <template>
-    <Transition-group
-        name="errorToBottom"
-        tag="ul"
-        class="errors"
-        @after-enter="handleEnter"
-        @before-leave="handleLeave"
-    >
+    <Transition-group name="errorToBottom" tag="ul" class="errors">
         <li class="errors__error" v-for="error in errors" :key="error.$uid">
             <div>{{ error.$message }}</div>
         </li>
@@ -24,16 +18,7 @@ export default {
             default: () => [],
         },
     },
-    methods: {
-        handleEnter(el) {
-            el.classList.add('errors__error--active');
-            // console.log(el);
-        },
-        handleLeave(el) {
-            el.classList.remove('errors__error--active');
-            // console.log(el);
-        },
-    },
+    methods: {},
 };
 </script>
 
@@ -43,8 +28,12 @@ export default {
     padding: 0;
 
     &__error {
+        position: relative;
+        z-index: -1;
+        padding-inline: $paddingInputX;
         color: $errorColor;
         display: grid;
+        margin-top: $paddingInputY;
         & > * {
             overflow: hidden;
         }
@@ -54,22 +43,26 @@ export default {
 .errorToBottom-enter-active {
     transition: transform $transitionSlow ease-in-out $transitionMedium,
         opacity $transitionMedium ease-in-out $transitionSlow,
-        grid-template-rows $transitionSlow ease-in-out;
+        grid-template-rows $transitionSlow ease-in-out,
+        margin $transitionFast ease-in-out;
 }
 .errorToBottom-leave-active {
-    transition: transform $transitionSlow ease-in-out,
+    transition: transform $transitionSlow ease-in-out $transitionSlow,
         opacity $transitionMedium ease-in-out,
-        grid-template-rows $transitionSlow ease-in-out $transitionSlow;
+        grid-template-rows $transitionSlow ease-in-out $transitionSlow,
+        margin $transitionFast ease-in-out $transitionSlow;
 }
 .errorToBottom-enter-to,
 .errorToBottom-leave {
     grid-template-rows: 1fr;
     opacity: 1;
+    margin-top: $paddingInputY;
 }
 .errorToBottom-enter,
 .errorToBottom-leave-to {
     opacity: 0;
     transform: translateY(-3rem);
     grid-template-rows: 0fr;
+    margin-top: 0;
 }
 </style>

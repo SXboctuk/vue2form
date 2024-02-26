@@ -13,14 +13,16 @@ $transitionSlow: 0.3s;
 $transitionMedium: 0.2s;
 $transitionFast: 0.1s;
 
-$paddingInputWrapper: 0.8rem 1rem;
+$paddingInputX: 1rem;
+$paddingInputY: 0.8rem;
+$paddingInputWrapper: $paddingInputY $paddingInputX;
 
 $labelInputPadding: 0 1.2rem 0 0;
 
 $titleSize: 2rem;
 
 $textSize: 1rem;
-$textSize-small: 0.8rem;
+$textSizeSmall: 0.8rem;
 
 $errorColor: #f00;
 $successColor: #0f0;
