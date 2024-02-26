@@ -2,7 +2,7 @@
     "name": "medods-test-1",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://sxboctuk.github.io/vue2form.github.io",
+    "homepage": "https://sxboctuk.github.io/vueform.github.io",
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
